@@ -4,11 +4,23 @@
 
 ## การต่อบอร์ด
 
-| nrf24l01        | arduino uno   |   | nrf24l01        | arduino uno   |
-| --------------- |:-------------:|   | --------------- |:-------------:|
-| col 3 is        | 00            |   | col 3 is        | 00            |
-| col 2 is        | 00            |   | col 2 is        | 00            |
-| zebra stripes   | 00            |   | zebra stripes   | 00            |
+| nrf24l01        | arduino uno   |
+| --------------- |:-------------:|
+| col 3 is        | 00            |
+| col 2 is        | 00            |
+| zebra stripes   | 00            |
+
+| nrf24l01        | arduino uno   |
+| --------------- |:-------------:|
+| col 3 is        | 00            |
+| col 2 is        | 00            |
+| zebra stripes   | 00            |
+
+| nrf24l01        | arduino uno   |
+| --------------- |:-------------:|
+| col 3 is        | 00            |
+| col 2 is        | 00            |
+| zebra stripes   | 00            |
 
 ## การติดตั้ง
 
@@ -18,6 +30,11 @@
 * I2Cdev Library https://maker.pro/files/I2Cdev.zip
 
 ## Coding
+ ตัวโปรแกรมจะแบ่งเป็น 2 ส่วนคือ Transmit กับ Rececive
+
+### Rececive
+
+### Transmit
 
 ## จัดทำโดย
 * 60070057 : พชร ศรียอดเวียง
