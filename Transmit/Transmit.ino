@@ -37,6 +37,37 @@ void loop()
   accelgyroIC1.getMotion6(&ax1, &ay1, &az1, &gx1, &gy1, &gz1);
   data[0] = map(ax1, -17000, 17000, 300, 400 ); //Send X axis data
   data[1] = map(ay1, -17000, 17000, 100, 200);  //Send Y axis data
+//Serial.print("X: ");
+  //Serial.println(data[0]);
+  //Serial.print("y: ");
+  //Serial.println(data[1]);
+  if(data[0] < 340){
+        //forward            
+        Serial.println("forward");
+        message_code = forward;
+      }
+  if(data[0] > 360){
+        //backward              
+        Serial.println("backward");
+        message_code = backward;
+      }
+       
+      if(data[1] < 145){
+        //left
+        Serial.println("left");
+        message_code = left;
+      }
+  
+      if(data[1] > 155){
+        //right
+        Serial.println("right");
+        message_code = right;
+      }
+      if(data[0] > 340 && data[0] < 360 && data[1] > 145 && data[1] < 155){
+        //stop car
+        Serial.println("stop");
+        message_code = stopi;
+      }
   if(message_code!=CODE_NONE)
   {
     radio.stopListening();
