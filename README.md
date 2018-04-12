@@ -1,4 +1,4 @@
-# Guidare (น้องมะลิ)
+﻿# Guidare (น้องมะลิ)
 
 ## อุปกรณ์ที่ใช้
 
@@ -220,7 +220,7 @@ void loop()
       radio.read(&in_data, sizeof(unsigned long));
       Serial.println("In Data: "+String(in_data));
     }
-    delay(1000);
+    delay(500);
   }
  
 }
