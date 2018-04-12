@@ -99,7 +99,7 @@ void loop()
       radio.read(&in_data, sizeof(unsigned long));
       Serial.println("In Data: "+String(in_data));
     }
-    delay(700);
+    delay(500);
   }
  
 }
