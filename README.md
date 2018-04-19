@@ -3,8 +3,9 @@
 ## อุปกรณ์ที่ใช้
 1. arduino uno 
 2. arduino nano
-3. MPU6050
-
+3. MPU6050 2 ตัว
+4. Gear moter with Trie 2 ตัว
+5. 9110S DC STEPPER MOTOR DRIVER H-BRIDGE
 
 ## การต่อบอร์ด
 
