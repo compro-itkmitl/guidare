@@ -1,11 +1,10 @@
 ﻿# Guidare (น้องมะลิ)
 
 ## อุปกรณ์ที่ใช้
-1.arduino uno 
-2.arduino nano
-3.MPU6050
-1. First ordered list item
-2. Another item
+1. arduino uno 
+2. arduino nano
+3. MPU6050
+
 
 ## การต่อบอร์ด
 
