@@ -25,9 +25,8 @@
 | VCC             | 3V3           |
 | GND             | GND           |
 
-| 9110S DC STEPPER|               |
-|   MOTOR DRIVER  |  arduino uno  |
-|     H-BRIDGE    |               |
+                
+|  MOTOR DRIVER   |  arduino uno  |
 | --------------- |:-------------:|
 |    A-A          |  3            |
 |    A-B          |  4            |
