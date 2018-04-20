@@ -65,7 +65,7 @@
 * MPU6050 Library https://maker.pro/files/MPU6050.zip
 * I2Cdev Library https://maker.pro/files/I2Cdev.zip
 
-**Coding
+##Coding
  ตัวโปรแกรมจะแบ่งเป็น 2 ส่วนคือ Transmit กับ Rececive
 *Rececive
 ส่วนของ Rececive คือส่วนของรถบังคับที่จะเป็นตัวรับข้อมูลโดยใช้ NRF24L01 ที่ส่งจาก arduino nano ที่อยู่ที่ถุงมือบังคับรถ
