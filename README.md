@@ -79,6 +79,9 @@
 ![alt text](https://github.com/compro-itkmitl/guidare/blob/master/Picture/pic2.jpg)
 
 
+
+
+
 * ฝั่ง Transmit
 ส่วนของ Transmit คือส่วนของถุงมือที่ส่งค่าที่วัดจาก MPU6050 ไปยัง ตัวรถบังคับโดยใช้  NRF24L01 เพื่อควบคุมทิศทางเเละการเคลื่อนไหวของตัวรถบังคับ ซึ่งตัวถุงมือเราจะใช้
 arduino nano ที่มีขนาดเล็กกว่า arduino uno
