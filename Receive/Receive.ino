@@ -16,6 +16,10 @@ const uint64_t recv_pipe=0xDEADBEEFF1L;
 
 void setup()
 {
+   pinMode(motor_aa,OUTPUT);
+   pinMode(motor_ab,OUTPUT);
+   pinMode(motor_ba,OUTPUT);
+   pinMode(motor_bb,OUTPUT);
   Serial.begin(9600);
   Serial.println("Ready for commands");
   radio.begin();
@@ -30,7 +34,6 @@ void setup()
 void loop()
 {
   unsigned long motor_code=CODE_NONE;
-
   if( radio.available())
   {
     while(radio.available())
@@ -41,7 +44,7 @@ void loop()
     radio.write(&motor_code, sizeof(unsigned long));
     radio.startListening();
     Serial.println(motor_code);
-if(motor_code==backward){
+    if(motor_code==backward){
       Serial.println("backward");
       digitalWrite(motor_aa,LOW);
       digitalWrite(motor_ab,HIGH);
@@ -53,14 +56,14 @@ if(motor_code==backward){
       digitalWrite(motor_ab,LOW);
       digitalWrite(motor_ba,HIGH);
       digitalWrite(motor_bb,LOW);
-    }else if(motor_code==left){
-      Serial.println("left");
+    }else if(motor_code==right){
+      Serial.println("right");
       digitalWrite(motor_aa,HIGH);
       digitalWrite(motor_ab,LOW);
       digitalWrite(motor_ba,LOW);
       digitalWrite(motor_bb,HIGH);
-    }else if(motor_code==right){
-      Serial.println("right");
+    }else if(motor_code==left){
+      Serial.println("left");
       digitalWrite(motor_aa,LOW);
       digitalWrite(motor_ab,HIGH);
       digitalWrite(motor_ba,HIGH);
@@ -74,6 +77,9 @@ if(motor_code==backward){
     }else{
       Serial.println("error..");
     }
-  }
+  }else{
+      Serial.println("radio error...");
+    }
+   delay(500);
 }
 
