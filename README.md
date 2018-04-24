@@ -95,6 +95,10 @@ arduino nano ที่มีขนาดเล็กกว่า arduino uno
 *  60070056 : พงศภัค ภิญญาพงษ์
 *  60070057 : พชร ศรียอดเวียง
 
+## อาจารย์ที่ปรึกษา
+|ผศ. ดร. กิติ์สุชาต พสุภา|ผศ. ดร. ปานวิทย์ ธุวะนุติ|
+|:-:|:-:|
+|![](/image/Aj.%20Oong.png)|![](/image/Aj.%20Panwit.png)|
 
 Faculty of Information Technology
 
